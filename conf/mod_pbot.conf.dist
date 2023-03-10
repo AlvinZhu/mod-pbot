@@ -1,0 +1,102 @@
+[worldserver]
+
+###################################################################################################
+#    真实假人配置文件
+###################################################################################################
+#
+#    FakePlayer.Enable
+#          备注: 真实假人系统开关。
+#          默认:     1 - (开启)
+#                    0 - (关闭)
+#
+#    FakePlayer.Account.Max
+#          备注: 同一个帐号下最多加载的假人数, 必须大于0。
+#          默认:     1
+#
+#    FakePlayer.Account.Allow
+#          备注: 只加载假人的帐号, 可填写多个帐号以空格分隔如"1 2 3"。
+#          默认:     ""
+#
+#    FakePlayer.Account.Ignore
+#          备注: 不加载假人的帐号, 可填写多个帐号以空格分隔如"1 2 3"。
+#          默认:     ""
+#
+#    FakePlayer.Login.MinTime
+#          备注: 上线假人的最小间隔(秒)。
+#          默认:     10 - (秒)
+#
+#    FakePlayer.Login.MaxTime
+#          备注: 上线假人的最大间隔(秒)。
+#          默认:     20 - (秒)
+#
+#    FakePlayer.Online.Rate
+#          备注: 最多加载几倍于在线玩家数量的假人, 支持小数, 比如1.5倍。
+#          默认:     1
+#
+#    FakePlayer.Online.Min
+#          备注: 无视倍率, 最少在线的假人, 受其他配置条件影响, 如只有2个帐号, 设置了每个帐号只加载1个假人
+#              , 那么此时假人上线数量实际上只有1人。
+#          默认:     10
+#
+#    FakePlayer.Online.Max
+#          备注: 最多在线假人数
+#          默认:     999
+#
+#    FakePlayer.Message.ToGameMaster
+#          备注: 消息转发到GM帐号。
+#          默认:     1 - (开启)
+#                    0 - (关闭)
+#
+#    FakePlayer.Message.GameMasterID
+#          备注: 消息只转发给指定帐号ID的GM, 可填写多个帐号以空格分隔如"1 2 3"。
+#          默认:     ""
+#
+#    FakePlayer.Queue.LFG.MinTime
+#          备注: 假人排副本最小间隔(秒), 只有在有玩家排本时才有效。
+#          默认:     30 - (秒)
+#
+#    FakePlayer.Queue.LFG.MaxTime
+#          备注: 假人排副本最大间隔(秒), 只有在有玩家排本时才有效。
+#          默认:     60 - (秒)
+#
+#    FakePlayer.Queue.BG.MinTime
+#          备注: 假人排战场最小间隔(秒), 只有在有玩家排战场时才有效。
+#          默认:     30 - (秒)
+#
+#    FakePlayer.Queue.BG.MaxTime
+#          备注: 假人排战场最大间隔(秒), 只有在有玩家排战场时才有效。
+#          默认:     60 - (秒)
+#
+#    FakePlayer.Field.Creature
+#          备注: 假人野外主动杀怪。
+#          默认:     1 - (开启)
+#                    0 - (关闭)
+#
+#    FakePlayer.Field.PVP
+#          备注: 假人野外主动PVP。
+#          默认:     1 - (开启)
+#                    0 - (关闭)
+
+
+FakePlayer.Enable = 1
+FakePlayer.Account.Max = 1
+FakePlayer.Account.Allow = ""
+FakePlayer.Account.Ignore = ""
+FakePlayer.Login.MinTime = 10
+FakePlayer.Login.MaxTime = 20
+FakePlayer.Online.Rate = 1
+FakePlayer.Online.Min = 10
+FakePlayer.Online.Max = 999
+FakePlayer.Message.ToGameMaster = 1
+FakePlayer.Message.GameMasterID = ""
+
+FakePlayer.Queue.LFG.MinTime = 30
+FakePlayer.Queue.LFG.MaxTime = 60
+FakePlayer.Queue.BG.MinTime = 30
+FakePlayer.Queue.BG.MaxTime = 60
+
+FakePlayer.Field.Creature = 1
+FakePlayer.Field.PVP = 1
+
+#
+###################################################################################################
